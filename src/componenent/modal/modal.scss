@@ -9,7 +9,7 @@
    right: 0;
    bottom: 0;
    overflow: auto;
-   background-color: rgba($color: $black, $alpha: 1.0);
+   background-color: rgba($color:#000, $alpha: 1.0);
    opacity: 0;
    visibility: hidden;
 
@@ -19,14 +19,13 @@
    }
    &__content{
     padding: 2rem;
-    background-color:$body-bg;
+    background-color:#0f0f0f;
     width: 57%;
     opacity: 0;
     transform: translateY(-250px );
     transition: transform .6s ease,opacity .6s ease;
     position:relative;
-
-    @include tablet{
+    @media (max-width:1024px) {
         width: 80%;
     }
     &__close{
@@ -38,7 +37,7 @@
        
 
         &:hover{
-            color:$main-color;
+            color:#ff0000;
         }
     }
    }
